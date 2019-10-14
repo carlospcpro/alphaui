@@ -1,0 +1,75 @@
+$color1: #261742;
+$color2: #ffffff;
+$color3: #97ddff;
+$color5: #75ff00;
+$color6: #0096c1;
+
+$color4: #f7f7f7;
+
+.cm1{
+    background-color: $color1 ;
+    p, *{
+        color: $color2;
+    }
+    span, a{
+        color: $color3;
+    }
+    a:hover{
+        color: $color4;
+    }
+    hr{
+        color: $color5;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: $color6;
+    }
+}
+.cm2{
+    background-color: $color6;
+    p, *{
+        color: $color2;
+    }
+    span, a{
+        color: $color3;
+    }
+    hr{
+        color: $color1;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: $color5;
+    }
+}
+.std1{
+    background-color: white;
+    p, *{
+        color: darken($color1, 10%);
+    }
+    span, a{
+        color: darken($color1, 10%);
+    }
+    hr{
+        color: white;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: darken($color1, 10%);
+    }
+}
+.std2{
+    background-color: rgb(216, 216, 216);
+    p, *{
+        color: darken($color1, 10%);
+    }
+    span, a{
+        color: darken($color1, 10%);
+    }
+    hr{
+        color: white;
+    }
+    h1, h2, h3, h4, h5, h6{
+        color: darken($color1, 10%);
+    }
+}
+footer{
+    background-color: $color1;
+    color: white;
+}

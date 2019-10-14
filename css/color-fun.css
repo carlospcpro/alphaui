@@ -1,0 +1,89 @@
+.cm1 {
+  background-color: #261742;
+}
+
+.cm1 p, .cm1 * {
+  color: #ffffff;
+}
+
+.cm1 span, .cm1 a {
+  color: #97ddff;
+}
+
+.cm1 a:hover {
+  color: #f7f7f7;
+}
+
+.cm1 hr {
+  color: #75ff00;
+}
+
+.cm1 h1, .cm1 h2, .cm1 h3, .cm1 h4, .cm1 h5, .cm1 h6 {
+  color: #0096c1;
+}
+
+.cm2 {
+  background-color: #0096c1;
+}
+
+.cm2 p, .cm2 * {
+  color: #ffffff;
+}
+
+.cm2 span, .cm2 a {
+  color: #97ddff;
+}
+
+.cm2 hr {
+  color: #261742;
+}
+
+.cm2 h1, .cm2 h2, .cm2 h3, .cm2 h4, .cm2 h5, .cm2 h6 {
+  color: #75ff00;
+}
+
+.std1 {
+  background-color: white;
+}
+
+.std1 p, .std1 * {
+  color: #100a1c;
+}
+
+.std1 span, .std1 a {
+  color: #100a1c;
+}
+
+.std1 hr {
+  color: white;
+}
+
+.std1 h1, .std1 h2, .std1 h3, .std1 h4, .std1 h5, .std1 h6 {
+  color: #100a1c;
+}
+
+.std2 {
+  background-color: #d8d8d8;
+}
+
+.std2 p, .std2 * {
+  color: #100a1c;
+}
+
+.std2 span, .std2 a {
+  color: #100a1c;
+}
+
+.std2 hr {
+  color: white;
+}
+
+.std2 h1, .std2 h2, .std2 h3, .std2 h4, .std2 h5, .std2 h6 {
+  color: #100a1c;
+}
+
+footer {
+  background-color: #261742;
+  color: white;
+}
+/*# sourceMappingURL=color-fun.css.map */

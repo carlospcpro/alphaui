@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Crimson+Text&display=swap');
+*{
+    font-family: 'Crimson Text', serif;
+}
+h1, h2, h3, h4, h5{
+    font-family: 'Cinzel', serif !important;
+}
