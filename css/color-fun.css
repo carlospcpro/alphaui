@@ -1,3 +1,17 @@
+.btn-color {
+  background-color: #0096c1 !important;
+  color: #ffffff !important;
+}
+
+.btn-color:hover {
+  background-color: #261742 !important;
+}
+
+.box * {
+  background-color: #261742 !important;
+  color: #97ddff !important;
+}
+
 .cm1 {
   background-color: #261742;
 }

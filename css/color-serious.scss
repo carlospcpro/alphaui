@@ -1,12 +1,22 @@
 $color1: #012b3d;
 $color2: #c7d4e7;
 $color3: #5a7e9a;
-$color5: #c7d4e7;
+$color5: #e6f0ff;
 $color6: #37566d;
 
 $color4: #f7f7f7;
 
-
+.btn-color{
+    background-color: $color6 !important;
+    color: $color2 !important; 
+    &:hover{
+        background-color: $color1 !important;
+    }
+}
+.box *{
+    background-color: $color1 !important;
+    color: $color5 !important; 
+}
 .cm1{
     background-color: $color1 ;
     p, *{

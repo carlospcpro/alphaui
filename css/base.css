@@ -1,7 +1,412 @@
-header {
-  padding: 156px 0 100px;
+/* RESET */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0px;
+  margin-block-end: 0em;
+}
+a {
+  text-decoration: none;
+  background-color: transparent;
 }
 
-section {
-  padding: 150px 0;
+/* GENERAL RULES */
+html {
+  scroll-behavior: smooth;
+}
+
+img {
+  max-width: 100%;
+}
+
+.bg-img {
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.invert {
+  filter: invert(1);
+}
+
+.white-box * {
+  background-color: white;
+}
+
+.black-box * {
+  background-color: black;
+}
+
+.fixed {
+  position: fixed !important;
+  z-index: 99;
+  top: 0;
+  width: 100%;
+}
+
+/* BASIC GRID */
+section, footer {
+  width: 100%;
+}
+
+.container {
+  max-width: 970px;
+}
+
+.container-full {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-flow: wrap;
+}
+.cell{
+  flex: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.half{
+  width: 50%;
+}
+.third{
+  width: 33.33%;
+}
+
+/* PARALLAX */
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* SPACING RULES */
+.breath {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.breath-small {
+  padding: 1rem !important;
+}
+
+.breath-medium {
+  padding: 3rem !important;
+}
+
+.breath-big {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+.text-breath {
+  padding: 1.5rem;
+}
+
+.header-breath {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.full-height {
+  min-height: 100vh;
+}
+
+.mid-height {
+  min-height: 50vh;
+}
+
+.height-100 {
+  min-height: 100px;
+}
+
+.height-200 {
+  min-height: 200px;
+}
+
+.height-500 {
+  min-height: 500px;
+}
+
+.height-1000 {
+  min-height: 1000px;
+}
+
+.full-width {
+  min-width: 100vh;
+}
+
+.mid-width {
+  min-width: 50vh;
+}
+
+.width-100 {
+  max-width: 100px;
+}
+
+.width-200 {
+  max-width: 200px;
+}
+
+.width-500 {
+  max-width: 500px;
+}
+
+.width-1000 {
+  max-width: 1000px;
+}
+
+/* TEXT ALIGNMENTS */
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+/* FLEXIBLE ALIGNMENT RULES */
+.align {
+  display: flex;
+}
+
+.top-left {
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.top-center {
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.top-right {
+  justify-content: flex-end;
+  align-items: flex-start;
+}
+
+.center-left {
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.center-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.center-right {
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.bottom-left {
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+.bottom-center {
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.bottom-right {
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+/* BORDER AND SHADOW STYLES */
+.simple-border {
+  border: 1px solid black;
+}
+
+.border-thick {
+  border-width: 1rem;
+}
+
+.border-grey {
+  border-color: rgb(204, 204, 204);
+}
+
+.border-white {
+  border-color: white;
+}
+
+.border-black {
+  border-color: black;
+}
+
+.rounded-border {
+  border-radius: 0.5rem;
+}
+
+.circle {
+  border-radius: 50%;
+}
+
+.shadow {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+  transition: .3s;
+}
+
+.shadow:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+  transition: .3s;
+}
+
+/* NAVIGATION */
+.navbar {
+  position: relative;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: .5rem 1rem;
+}
+
+.navbar>.container {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.navbar-brand {
+  display: inline-block;
+  padding-top: .3125rem;
+  padding-bottom: .3125rem;
+  margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.navbar-expand-lg {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.navbar-expand-lg .navbar-collapse {
+  display: -ms-flexbox!important;
+  display: flex!important;
+  -ms-flex-preferred-size: auto;
+  flex-basis: auto;
+}
+
+.navbar-nav {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 0;
+  margin-bottom: 0;
+  margin-top: 0;
+  list-style: none;
+}
+.ml-auto, .mx-auto {
+  margin-left: auto!important;
+}
+.navbar-expand-lg .navbar-nav {
+  -ms-flex-direction: row;
+  flex-direction: row;
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+  padding-right: .5rem;
+  padding-left: .5rem;
+}
+.navbar-nav .nav-link {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-expand-lg>.container, .navbar-expand-lg>.container-fluid {
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+}
+.navbar>.container, .navbar>.container-fluid {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+/* FORMS */
+form{
+  border: 1px solid rgb(230, 228, 228);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.cell > label{
+  display: block;
+}
+.cell > input{
+  width: 100%;
+  border-radius: 0.25rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+  border: 0px;
+  -webkit-box-sizing:content-box;
+	-moz-box-sizing:content-box;
+  box-sizing:content-box;
+  margin-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+}
+.cell > h1,.cell > h2,.cell > h3,.cell > h4,.cell > h5,.cell > h6{
+  margin-bottom: 1rem;
+}
+form button{
+  border-radius: 0.5rem;
+  border: 0px;
+  padding: 0.5rem 1rem;
+  margin-top: 1rem;
+  margin-left: 1rem;
+  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.178);
+}
+
+@media only screen and (max-width: 1080px){
+
+}
+
+@media only screen and (max-width: 768px){
+  .half, .third{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 320px){
+
+  
 }

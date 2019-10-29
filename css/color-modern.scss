@@ -5,6 +5,17 @@ $color4: #f7f7f7;
 $color5: #faa916;
 $color6: #9c0d38;
 
+.btn-color{
+    background-color: $color6 !important;
+    color: $color2 !important; 
+    &:hover{
+        background-color: $color1 !important;
+    }
+}
+.box *{
+    background-color: $color1 !important;
+    color: $color5 !important; 
+}
 .cm1{
     background-color: $color1 ;
     p, *{

@@ -1,3 +1,17 @@
+.btn-color {
+  background-color: #37566d !important;
+  color: #c7d4e7 !important;
+}
+
+.btn-color:hover {
+  background-color: #012b3d !important;
+}
+
+.box * {
+  background-color: #012b3d !important;
+  color: #e6f0ff !important;
+}
+
 .cm1 {
   background-color: #012b3d;
 }
@@ -15,7 +29,7 @@
 }
 
 .cm1 hr {
-  color: #c7d4e7;
+  color: #e6f0ff;
 }
 
 .cm1 h1, .cm1 h2, .cm1 h3, .cm1 h4, .cm1 h5, .cm1 h6 {
@@ -39,7 +53,7 @@
 }
 
 .cm2 h1, .cm2 h2, .cm2 h3, .cm2 h4, .cm2 h5, .cm2 h6 {
-  color: #c7d4e7;
+  color: #e6f0ff;
 }
 
 .std1 {
